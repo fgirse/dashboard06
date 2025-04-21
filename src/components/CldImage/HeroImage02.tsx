@@ -1,6 +1,6 @@
-
 import Image from "next/image";
 import {Cloudinary} from "@cloudinary/url-gen";
+import * as SeparatorPrimitive from "@radix-ui/react-separator";
 
 // Import required actions.
 

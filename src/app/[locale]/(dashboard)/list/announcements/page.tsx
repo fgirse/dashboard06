@@ -12,11 +12,12 @@ type AnnouncementList = Announcement & { class: Class }
 
 // Use the Next.js generated types for the page props
 interface PageProps {
-  searchParams: { [key: string]: string | string[] | undefined }
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
 }
 
-const AnnouncementListPage = async ({ searchParams }: PageProps) => {
-  const { userId, sessionClaims } = auth()
+const AnnouncementListPage = async (props: PageProps) => {
+  const searchParams = await props.searchParams;
+  const { userId, sessionClaims } = await auth()
   const role = (sessionClaims?.metadata as { role?: string })?.role
   const currentUserId = userId
 

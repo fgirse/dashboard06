@@ -64,7 +64,7 @@ myImage
     
     <div className="flex flex-col items-center">
     
-      <Image src={myUrl} width={1280} height={800} alt="Transformed Image" className="" />
+      <Image src={myUrl} width={1580} height={900} alt="Transformed Image" className="" />
     </div>
     
     

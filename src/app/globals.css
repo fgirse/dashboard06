@@ -1,10 +1,25 @@
-@tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwind base;
+
+:root {
+  --footer-height: 60px;
+  --header-height: 60px;
+}
+
+.content {
+  padding: 0px 20px !important;
+  background-color: bisque;
+  --offset: calc(var__(__footer-height) var(__header-hight));
+  min-height:calc(100vh - var(--offset));
+  display: flex; 
+justify-content: center;
+align-items: center;  
+}
 
 .react-calendar {
-  width: 100% !important;
   border: none !important;
+  width: 100% !important;
   font-family: "Inter", sans-serif !important;
 }
 

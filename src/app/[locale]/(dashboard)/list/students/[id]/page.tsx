@@ -11,12 +11,18 @@ import Link from "next/link"
 import { notFound } from "next/navigation"
 import { Suspense } from "react"
 
-const SingleStudentPage = async ({
-  params: { id },
-}: {
-  params: { id: string }
-}) => {
-  const { sessionClaims } = auth()
+const SingleStudentPage = async (
+  props: {
+    params: Promise<{ id: string }>
+  }
+) => {
+  const params = await props.params;
+
+  const {
+    id
+  } = params;
+
+  const { sessionClaims } = await auth()
   const role = (sessionClaims?.metadata as { role?: string })?.role
 
   const student:

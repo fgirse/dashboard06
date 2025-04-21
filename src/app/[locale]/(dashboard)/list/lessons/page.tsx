@@ -14,11 +14,12 @@ type LessonList = Lesson & { subject: Subject } & { class: Class } & {
 
 // Use the Next.js generated types for the page props
 interface PageProps {
-  searchParams: { [key: string]: string | string[] | undefined }
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
 }
 
-const LessonListPage = async ({ searchParams }: PageProps) => {
-  const { sessionClaims } = auth()
+const LessonListPage = async (props: PageProps) => {
+  const searchParams = await props.searchParams;
+  const { sessionClaims } = await await auth()
   const role = (sessionClaims?.metadata as { role?: string })?.role
 
   const columns = [

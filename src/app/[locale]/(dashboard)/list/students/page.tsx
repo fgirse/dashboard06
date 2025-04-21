@@ -15,11 +15,12 @@ type StudentList = Student & { class: Class }
 
 // Use the Next.js generated types for the page props
 interface PageProps {
-  searchParams: { [key: string]: string | string[] | undefined }
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
 }
 
-const StudentListPage = async ({ searchParams }: PageProps) => {
-  const { sessionClaims } = auth()
+const StudentListPage = async (props: PageProps) => {
+  const searchParams = await props.searchParams;
+  const { sessionClaims } =  await auth()
   const role = (sessionClaims?.metadata as { role?: string })?.role
 
   const columns = [

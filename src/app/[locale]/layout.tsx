@@ -12,7 +12,7 @@ import Header from "@/components/header";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://clerk-next-app.vercel.app/"),
-  title: "Next.js Clerk Template",
+  title: "8zense.com",
   description:
     "A simple and powerful Next.js template featuring authentication and user management powered by Clerk.",
   openGraph: { images: ["/og.png"] },
@@ -56,9 +56,7 @@ export default function RootLayout({
       <body className={`min-h-screen flex flex-col antialiased`}>
      <Header/>
      <Navigation/>
-      
-      
-       <main className="overflow-x-hidden ">
+       <main className="content overflow-x-hidden ">
           {children}
           </main>
           <Footer/>

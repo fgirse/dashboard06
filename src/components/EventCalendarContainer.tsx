@@ -13,7 +13,7 @@ import {
   isSameDay,
   isToday,
 } from "date-fns"
-import { cn } from "@/lib/utils"
+import { cn } from "../../lib/lib/utils";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/Butto"
 import { Badge } from "@/components/ui/badge"

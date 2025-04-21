@@ -20,6 +20,7 @@ import {byAngle} from "@cloudinary/url-gen/actions/rotate"
   import Container from "@/components/Container";
   import Center from "@/components/Center";
   import { useTranslations } from "next-intl";
+import { TextAlignment } from "@cloudinary/url-gen/qualifiers";
 // Create and configure your Cloudinary instance.
 
 export default function HeroImage02() {
@@ -41,27 +42,18 @@ const myImage = cld.image('/skizze_cvbvbm');
 myImage
   .resize(fill(800, 400))
   .roundCorners(byRadius(0))
-  
-  .overlay(   
+  .overlay(
     source(
-      text(t("text01"), new TextStyle('bowlby one sc',50))
-      .textColor('black')      
-    )
-    
-    .position(new Position().gravity(compass('north')).offsetY(-75).offsetX(0)))
-
-    .overlay(   
-        source(
-          text(t("text02"), new TextStyle('bowlby one sc',50))
-          .textColor('black')      
-        )
-        
-        .position(new Position().gravity(compass('north')).offsetY(-75).offsetX(0)))
- 
-
-     
-      
-    
+      text(t("text01"), new TextStyle('bowlby one sc', 50))
+        .textColor('black')
+    ).position(new Position().gravity(compass('north')).offsetY(-40).offsetX(0))
+  )
+  .overlay(
+    source(
+      text(t("text02"), new TextStyle('raleway', 20)) // Removed .alignment()
+        .textColor('black')
+    ).position(new Position().gravity(compass('south')).offsetY(-120).offsetX(0))
+  )
   .rotate(byAngle(0))
   .format('png');
   

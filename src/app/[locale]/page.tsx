@@ -16,7 +16,7 @@ export default function Home() {
         
       <div className="  w-full max-w-[100vw] mx-auto flex flex-col mb-8 ">
          <HeroImage/>
-          <div className="mb-8 py-12 flex flex-col items-center bg-gradient-to-b  from-[#938d7d] via-transparent  to-stone-700 lg:py-0">                                                                                                          "&gt;
+          <div className=" py-12 flex flex-col items-center bg-gradient-to-b  from-[#938d7d] via-transparent  to-stone-700 lg:bg-gradient-to-b  from-transparent via-transparent  to-transparent lg:py-12">                                                                                                          "&gt;
          <Gsap/>
          </div>   
          </div>
@@ -25,7 +25,7 @@ export default function Home() {
         <HeroImage02/> 
          </div>
 
-        <div className="mt-[1vh] h-[100vh] w-full max-w-[99em] mx-auto flex flex-col items-center lg:mt-[12vh]">
+        <div className="mt-[12vh] h-[100vh] w-full max-w-[99em] mx-auto flex flex-col items-center lg:mt-[12vh]">
         <HeroImage03/> 
         
           </div>

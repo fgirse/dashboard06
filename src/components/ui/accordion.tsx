@@ -1,9 +1,9 @@
 "use client"
 
 import * as React from 'react';
-import * as AccordionPrimitive from '@radix-ui/react-accordion';
-import { cn } from '@/src/lib/utils';
-import { AccordionItem } from '@/src/components/ui/accordion';
+import * as AccordionPrimitive from '@radix-ui/react-accordion';                                                                                          
+import { cn } from '../../../lib/lib/utils';
+import { AccordionItem } from '@heroui/react';
 
 const Accordion = AccordionPrimitive.Root;
 const AccordionTrigger = AccordionPrimitive.Trigger;
