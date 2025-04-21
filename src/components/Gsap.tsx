@@ -3,7 +3,7 @@
 "use client";
 
 import { gsap } from "gsap";
-import Logo from"../../public/LogoEZ990.svg";
+import Logo from"../../../../../public/LogoEZ990.svg";                                                                                                                 
 import Image from "next/image";
 import { useEffect } from "react";
 
