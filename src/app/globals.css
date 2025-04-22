@@ -9,7 +9,7 @@
 
 .content {
   padding: 0px 20px !important;
-  background-color: bisque;
+  background-color: rgb(240, 239, 238);
   --offset: calc(var__(__footer-height) var(__header-hight));
   min-height:calc(100vh - var(--offset));
   display: flex; 
