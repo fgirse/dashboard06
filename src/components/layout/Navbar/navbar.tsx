@@ -5,7 +5,6 @@ import Link from "next/link"
 import { Menu, X, ChevronDown } from "lucide-react"
 import { cn } from "../../../../lib/lib/utils";
 import { navbar } from "@heroui/react";
-import LogoEZ from "../../../../public/TextLogo4.png";
 import Image from "next/image"    
 import { useTranslations } from "next-intl";
 import Logo from "../../../../public/LogoEZ990.svg";
@@ -111,7 +110,7 @@ export default function Navbar() {
         <div className="flex justify-between h-16">
         <div className="flex items-center">
             <Link href="/" className="flex-shrink-0 flex items-center">
-              <Image src={LogoEZ} className="text-xl font-bold text-gray-800" alt="LogoEZ" width={240} height={20}/>
+              <Image src="/LogoEZ990.svg" className="text-xl font-bold text-gray-800" alt="LogoEZ" width={240} height={20}/>
             </Link>
           </div>
 
