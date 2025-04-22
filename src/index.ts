@@ -2,8 +2,7 @@ export { default as CldImage } from './components/CldImage';
 import CldImageProps from './components/CldImage';
 export type { CldImageProps };
 
-export { default as CldOgImage } from './components/CldOgImage';
-export type { CldOgImageProps } from './components/CldOgImage';
+//export type { CldOgImageProps } from './components/CldOgImage';
 
 export { default as CldUploadButton } from './components/CldUploadButton';
 export type { CldUploadButtonProps } from './components/CldUploadButton';
