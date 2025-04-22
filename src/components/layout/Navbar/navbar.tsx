@@ -110,7 +110,7 @@ export default function Navbar() {
         <div className="flex justify-between h-16">
         <div className="flex items-center">
             <Link href="/" className="flex-shrink-0 flex items-center">
-              <Image src="/LogoEZ990.svg" className="text-xl font-bold text-gray-800" alt="LogoEZ" width={240} height={20}/>
+              <Image src="/TextLogo4.png" className="text-xl font-bold text-gray-800" alt="LogoEZ" width={240} height={20}/>
             </Link>
           </div>
 
