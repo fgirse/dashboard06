@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
 				<div className="md:flex md:justify-between">
 					<div className="mb-6 md:mb-0">
 						<div className="flex items-center">
-						<Image src="/LogoEZ990.svg" alt="Logo" className="h-12 w-auto" />
+						<Image src="/LogoEZ990.svg" width="300" height={300} alt="Logo" className="h-12 w-auto" />
 						<a href="/" className="flex items-center ">
 							<span className="self-center text-2xl text-[#D3D355] font-semibold whitespace-nowrap dark:text-white">
 								8zense.com

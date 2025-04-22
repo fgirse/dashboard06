@@ -10504,6 +10504,7 @@ __metadata:
     framer-motion: "npm:^12.6.3"
     gsap: "npm:^3.12.7"
     lucide-react: "npm:^0.501.0"
+    mkdirp: "npm:^3.0.1"
     moment: "npm:^2.30.1"
     next: "npm:^15.2.0"
     next-cloudinary: "npm:^6.13.0"
