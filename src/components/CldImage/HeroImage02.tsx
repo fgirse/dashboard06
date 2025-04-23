@@ -60,21 +60,21 @@ myImage
 
       .overlay(   
         source(
-          text(t("zitat03"), new TextStyle('bowlby one sc',50))
+          text(t("zitat03"), new TextStyle('bowlby one sc',60))
           .textColor('black')      
         )
         
         .position(new Position().gravity(compass('north')).offsetY(210).offsetX(0)))
         .overlay(   
             source(
-              text(t("zitat03"), new TextStyle('bowlby one sc',50))
+              text(t("zitat03"), new TextStyle('bowlby one sc',60))
               .textColor('black')      
             )
             
             .position(new Position().gravity(compass('north')).offsetY(210).offsetX(0)))
             .overlay(   
                 source(
-                  text(t("zitat04"), new TextStyle('bowlby one sc',50))
+                  text(t("zitat04"), new TextStyle('bowlby one sc',60))
                   .textColor('black')      
                 )
                 

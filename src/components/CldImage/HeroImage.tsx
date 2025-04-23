@@ -16,6 +16,7 @@ import {sepia} from "@cloudinary/url-gen/actions/effect";
   // Import required values.
   import {text} from "@cloudinary/url-gen/qualifiers/source";
   import {Position} from "@cloudinary/url-gen/qualifiers/position";
+  import { useTranslations } from "next-intl";
   import {TextStyle} from "@cloudinary/url-gen/qualifiers/textStyle";
   import {autoGravity, compass} from "@cloudinary/url-gen/qualifiers/gravity";
   import Container from "../Container";
@@ -29,6 +30,8 @@ const cld = new Cloudinary({
   }
 }); 
 
+const t = useTranslations('Hero');
+
 // Use the image with public ID, 'sample'.
 const myImage = cld.image('/interiore27_rri2qv');
 
@@ -37,21 +40,33 @@ const myImage = cld.image('/interiore27_rri2qv');
 myImage
   .resize(fill(1500, 900))
   .roundCorners(byRadius(0))
+
+  .overlay(   
+    source(
+      text(t("präTitle"), new TextStyle('bowlby one sc',140))
+      .textColor('white')       
+    )
+    
+    .position(new Position().gravity(compass('north_west')).offsetY(200).offsetX(36)))
+
   
   .overlay(   
     source(
-      text("8zense.com", new TextStyle('bowlby one sc',150))
-      .textColor('white')      
+      text(t("Title"), new TextStyle('bowlby one sc',48))
+      .textColor('white')       
     )
     
-    .position(new Position().gravity(compass('north')).offsetY(90).offsetX(0)))
+    .position(new Position().gravity(compass('north_west')).offsetY(320).offsetX(36)))
+
     .overlay(   
       source(
-        text("zeitloses Design aus dem Werkstoff Beton", new TextStyle('bowlby one sc',32))
-        .textColor('white')      
+        text(t("postTitle"), new TextStyle('bowlby one sc',15))
+        .textColor('white')       
       )
       
-      .position(new Position().gravity(compass('north')).offsetY(224).offsetX(0)))
+      .position(new Position().gravity(compass('north_west')).offsetY(390).offsetX(36)))
+  
+
     
   .rotate(byAngle(0))
   .format('png');
@@ -64,7 +79,7 @@ myImage
     
     <div className="flex flex-col items-center">
     
-      <Image src={myUrl} width={1580} height={900} alt="Transformed Image" className="" />
+      <Image src={myUrl} width={1580} height={900} alt="Transformed Image" className="text-white text-left" />
     </div>
     
     

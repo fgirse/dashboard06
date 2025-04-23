@@ -1,12 +1,12 @@
 import { ClerkProvider } from "@clerk/nextjs";
-import "../globals.css";
+import "./globals.css";
 import Script from "next/script";
 import { Metadata } from "next";
-import localFont from "next/font/local";
+//import localFont from "next/font/local";
 import Footer from "@//components/layout/Footer";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
 import { Raleway, Architects_Daughter, Bowlby_One_SC } from "next/font/google";
-import Navigation from "@/components/layout/Navbar/navbar";
+import { Navbar } from "@/components/layout/Navbar/navbar";
 import { NextIntlClientProvider } from "next-intl";
 import Header from "@/components/header";
 
@@ -55,7 +55,7 @@ export default function RootLayout({
     <html lang="en" className={` ${bowlbySC.variable} ${raleway.variable} ${architectsDaughter.variable}`}>
       <body className={`min-h-screen flex flex-col antialiased`}>
      <Header/>
-     <Navigation/>
+     <Navbar/>
        <main className="content overflow-x-hidden ">
           {children}
           </main>
