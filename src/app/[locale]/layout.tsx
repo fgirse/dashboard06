@@ -20,8 +20,6 @@ export const metadata: Metadata = {
 
 
 
-
-
 const architectsDaughter = Architects_Daughter({
 
   subsets: ["latin"],
@@ -56,7 +54,7 @@ export default function RootLayout({
       <body className={`min-h-screen flex flex-col antialiased`}>
      <Header/>
      <Navbar/>
-       <main className="content overflow-x-hidden ">
+       <main className=" overflow-x-hidden ">
           {children}
           </main>
           <Footer/>

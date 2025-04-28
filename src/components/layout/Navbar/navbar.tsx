@@ -31,7 +31,7 @@ const navigation = [
       children: [
         { title: t("whoweare"), href: "werwirsind", description: "Track and visualize your data" },
         { title: t("whatwedo"), href: "waswirtun", description: "Einblicke in unser kreatives Schaffen" },
-        { title: "cv", href: "curriculum", description: "Curriculum Fernanda Perreira" },
+        { title: t("cv"), href: "curriculum", description: "Curriculum Fernanda Perreira" },
         { title: "frei", href: "#", description: "zur freien Verfügumg  " },
       ],
     },
@@ -39,36 +39,26 @@ const navigation = [
       title: "Rechtliches",
       href: "rechtliches",    
       children: [
-        { title: "Impressum", href: "impressum", description: "Infos die laut Gesetzgeber zur Verfügung gstellt werden müssen" },
-        { title: "For Enterprise", href: "Datenschutzerklärung", description: "Alles zum Datenschutz " },
-        { title: "For E-commerce", href: "#", description: "Sell products online" },
-        { title: "For Creators", href: "#", description: "zur freien Verfügumg  " },
+        { title: t("impressum"), href: "impressum", description: "Infos die laut Gesetzgeber zur Verfügung gstellt werden müssen" },
+        { title: t("datenschutz"), href: "Datenschutzerklärung", description: "Alles zum Datenschutz " },
+        { title: t("cookies"), href: "#", description: "Sell products online" },
+        { title: t("agb"), href: "#", description: "zur freien Verfügumg  " },
       ],
     },
     { title: "Galery", href: "galleria" },
     { title: "Service", href: "services" },
     { title: "Kontakt", href: "contact" },
-    {
-      title: "Resources",
-      href: "#",
-      children: [
-        { title: "Blog", href: "#", description: "Latest news and articles" },
-        { title: "Documentation", href: "#", description: "Guides and references" },
-        { title: "Community", href: "#", description: "Connect with other users" },
-        { title: "Support", href: "#", description: "Get help from our team" },
-      ],
-    },
+
   ]
-  
 
   return (
-    <header className="bg-amber-500 shadow-sm uppercase white">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8" aria-label="Global">
+    <header className="bg:stone-300 lg:bg-amber-500 shadow-sm ">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-5" aria-label="Global">
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
+            <span className="sr-only"></span>
             <div className="h-8 w-auto font-bold text-xl">
-              <Image src="/TextLogo4.png" alt="Logo" width={100} height={100} />
+              <Image src="/TextLogo4.png" alt="Logo" width={120} height={70} />
             </div>
           </Link>
         </div>
@@ -77,7 +67,7 @@ const navigation = [
         <div className="flex lg:hidden">
           <button
             type="button"
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-stone-700 hover:bg-stone-300"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             <span className="sr-only">Toggle menu</span>
@@ -97,7 +87,7 @@ const navigation = [
                 <div>
                   <button
                     onClick={() => toggleDropdown(item.title)}
-                    className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900"
+                    className="flex items-center gap-x-1 text-lg uppercase font-semibold leading-6 text-gray-100"
                     aria-expanded={activeDropdown === item.title}
                   >
                     {item.title}
@@ -119,7 +109,7 @@ const navigation = [
                             <Link
                               key={child.title}
                               href={child.href}
-                              className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
+                              className="-m-3 flex items-start rounded-lg p-3 hover:bg-stone-200"
                               onClick={() => setActiveDropdown(null)}
                             >
                               <div>
@@ -134,7 +124,7 @@ const navigation = [
                   )}
                 </div>
               ) : (
-                <Link href={item.href} className="text-sm font-semibold leading-6 text-gray-900">
+                <Link href={item.href} className="lg:text-xl font-bold leading-6 text-stone-100 hover:border-b-2 border-stone-100 uppercase">
                   {item.title}
                 </Link>
               )}
@@ -143,8 +133,8 @@ const navigation = [
         </div>
 
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <Link href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Log in <span aria-hidden="true">&rarr;</span>
+          <Link href="/admin" className="text-xl font-semibold leading-6 text-stone-100 bg-red-700 py-1 px-2 rounded-xl">
+          t('Admin') <span aria-hidden="true">&rarr;</span>
           </Link>
         </div>
       </nav>
@@ -203,7 +193,7 @@ const navigation = [
         <div className="border-t border-gray-200 px-4 py-6">
           <Link
             href="/admin"
-            className="block text-base font-semibold leading-7 bg-red-600 text-white hover:text-gray-900"
+            className="block text-base font-semibold leading-7 bg-red-800 text-white hover:text-gray-900 rounded-xl"
             onClick={() => setMobileMenuOpen(false)}
           >
             t("Admin")

@@ -1,17 +1,9 @@
 // header.tsx
 "use client";
 // the :point_up: use client was necessary to make this module work
-import { SignInButton, SignedIn, SignUpButton, SignedOut, UserButton, ClerkProvider } from "@clerk/nextjs";
+import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import Image from "next/image";
 import LocaleSwitcherSelect from "./LocaleSwitcherSelect";
-import { usePathname } from "next/navigation";
-import { useRouter } from "next/navigation";
-import { useParams } from "next/navigation";
-import { useTransition } from "react";
-import { Locale } from "next-intl";
-import { useState } from "react";
-import { useEffect } from "react";
-import { useLocale } from "next-intl";
 import { useTranslations } from "next-intl";
 
 const Header = () => {
@@ -25,7 +17,7 @@ const Header = () => {
         <div className="w-16 mb-3">
       <Image src="/LogoEZ990.svg" alt="8zense Logo" width={54} height={54} className="bg-black ml-3 mt-3" />
       </div>
-      <div className=" bg-zinc-6000 rounded-lg ">
+      <div className=" bg-zinc-600 rounded-lg ">
       <LocaleSwitcherSelect defaultValue={"de"} label={"locale"} >
         <option value="🇬🇧 en">English</option>
         <option value="🇩🇪 de">Deutsch</option>

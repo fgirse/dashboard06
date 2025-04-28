@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import {Cloudinary} from "@cloudinary/url-gen";
 
@@ -21,6 +20,7 @@ import {sepia} from "@cloudinary/url-gen/actions/effect";
   import {autoGravity, compass} from "@cloudinary/url-gen/qualifiers/gravity";
   import Container from "../Container";
   import Center from "../Center";
+import { TextAlignment } from "@cloudinary/url-gen/qualifiers";
 // Create and configure your Cloudinary instance.
 
 export default function HeroImage() {
@@ -60,10 +60,9 @@ myImage
 
     .overlay(   
       source(
-        text(t("postTitle"), new TextStyle('bowlby one sc',15))
-        .textColor('white')       
+        text(t("postTitle"), new TextStyle('raleway', 15) .textAlignment('block')               .fontWeight('black')) // Apply 'bold' using .fontWeight()
+          .textColor('white')      
       )
-      
       .position(new Position().gravity(compass('north_west')).offsetY(390).offsetX(36)))
   
 

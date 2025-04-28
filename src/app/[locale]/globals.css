@@ -2,6 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
+.content{
+  --offset: calc(var(--footer-height) + var(--header-height));
+  min-height: calc(100vh - var(--offset));
+  display: flex;
+
+
+
+}
+
+.container {
+  max-width: 100% !important;
+  margin: 5 auto !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  padding: 7px 0;
+  background-color: #e7ac46 !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
 .react-calendar {
   width: 100% !important;
   border: none !important;

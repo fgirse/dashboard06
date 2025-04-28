@@ -85,7 +85,7 @@ const Feature = ({
         ease: "easeInOut",
         duration: 0.35,
       }}
-      className={`mt-[60vh] relative flex min-h-[450px] w-10/12 max-w-lg shrink-0 flex-col justify-between overflow-hidden p-8 shadow-lg md:w-3/5 ${
+      className={`mt-[6vh] relative flex min-h-[450px] w-10/12 max-w-lg shrink-0 flex-col justify-between overflow-hidden p-8 shadow-lg md:w-3/5 ${
         index % 2 ? "bg-black text-white" : " bg-white"
       }`}
     >

@@ -74,8 +74,8 @@
 
     "Hero": {
       "präTitle": "8zense.com",
-       "Title": "Verwandle Dein zuHause in en Meisterstück",
-      "postTitle": "Werten Sie Ihr Wohnerlebnis mit \nunseren maßgeschneiderten Innenarchitekturdienstleistungen auf,\n die auf Ihren einzigartigen Stil und Ihre Bedürfnisse zugeschnitten sind"
+       "Title": "Verwandle Dein zuHause in ein Meisterstück",
+      "postTitle": "Werten Sie Ihr Wohnerlebnis mit \tunseren maßgeschneiderten Innenarchitektur- \ndienstleistungen auf, die auf Ihren einzigartigen Stil und Ihre Bedürfnisse zugeschnitten sind"
     },
   
 
@@ -133,8 +133,8 @@
       "rechtliches": "Rechtliches",
       "cookies": "Cookies",
       "agb": "allgemeine Geschäftsbedingungen",
-      "Admin": "Adminboard",
-      "topsecret": "Admin"
+      "Admin": "Adminboard"
+    
     },
     "NotFoundPage": {
       "description": "Bitte überprüfe die Addressleiste deines Browsers oder verwende die Navigation um zu einer bekannten Seite zu wechseln.",

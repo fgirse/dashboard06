@@ -45,6 +45,7 @@
     "@t3-oss/env-nextjs": "^0.12.0",
     "@types/react-big-calendar": "^1.8.9",
     "antd": "^5.24.6",
+    "autoprefixer": "^10.4.21",
     "class-variance-authority": "^0.7.1",
     "date-fns": "^4.1.0",
     "drizzle-orm": "^0.40.0",
