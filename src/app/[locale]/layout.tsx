@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   title: "8zense.com",
   description:
     "A simple and powerful Next.js template featuring authentication and user management powered by Clerk.",
-  openGraph: { images: ["/og.png"] },
+  openGraph: { images: ["/LogoEZ990.svg"] },
 };
 
 

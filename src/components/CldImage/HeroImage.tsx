@@ -60,7 +60,7 @@ myImage
 
     .overlay(   
       source(
-        text(t("postTitle"), new TextStyle('raleway', 15) .textAlignment('block')               .fontWeight('black')) // Apply 'bold' using .fontWeight()
+        text(t("postTitle"), new TextStyle('raleway', 24) .textAlignment('justify') .fontWeight('black')) // Apply 'bold' using .fontWeight()
           .textColor('white')      
       )
       .position(new Position().gravity(compass('north_west')).offsetY(390).offsetX(36)))

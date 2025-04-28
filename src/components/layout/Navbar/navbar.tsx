@@ -8,7 +8,7 @@ import { ChevronDown, Menu, X } from "lucide-react"
 import Image from "next/image"
 import { cn } from "../../../../lib/lib/utils"
 import { useTranslations } from "next-intl";
-
+import TextLogo from '../../../../public/TextLogo4.png';
 
 
 export function Navbar() {
@@ -39,10 +39,10 @@ const navigation = [
       title: "Rechtliches",
       href: "rechtliches",    
       children: [
-        { title: t("impressum"), href: "impressum", description: "Infos die laut Gesetzgeber zur Verfügung gstellt werden müssen" },
-        { title: t("datenschutz"), href: "Datenschutzerklärung", description: "Alles zum Datenschutz " },
-        { title: t("cookies"), href: "#", description: "Sell products online" },
-        { title: t("agb"), href: "#", description: "zur freien Verfügumg  " },
+        { title: t("impressum"), href: "/impressum", description: "Infos die laut Gesetzgeber zur Verfügung gstellt werden müssen" },
+        { title: t("datenschutz"), href: "Datenschutzerklaerung", description: "Alles zum Datenschutz " },
+        { title: t("cookies"), href: "/cookies", description: "Sell products online" },
+        { title: t("agb"), href: "agb#", description: "zur freien Verfügumg  " },
       ],
     },
     { title: "Galery", href: "galleria" },
@@ -58,7 +58,7 @@ const navigation = [
           <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only"></span>
             <div className="h-8 w-auto font-bold text-xl">
-              <Image src="/TextLogo4.png" alt="Logo" width={120} height={70} />
+              <Image src={TextLogo} alt="Logo" width={120} height={70} />
             </div>
           </Link>
         </div>
@@ -133,9 +133,9 @@ const navigation = [
         </div>
 
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <Link href="/admin" className="text-xl font-semibold leading-6 text-stone-100 bg-red-700 py-1 px-2 rounded-xl">
-          t('Admin') <span aria-hidden="true">&rarr;</span>
-          </Link>
+        <Link href="/admin" className="text-xl text-white bg-red-800 rounded-lg px-3 py-1 hover:bg-lime-500">{t("Admin")}</Link>
+
+
         </div>
       </nav>
 
@@ -191,13 +191,9 @@ const navigation = [
           ))}
         </div>
         <div className="border-t border-gray-200 px-4 py-6">
-          <Link
-            href="/admin"
-            className="block text-base font-semibold leading-7 bg-red-800 text-white hover:text-gray-900 rounded-xl"
-            onClick={() => setMobileMenuOpen(false)}
-          >
-            t("Admin")
-          </Link>
+        <Link href="/admin" className="text-xl text-white bg-red-800 rounded-lg px-3 py-1 hover:bg-lime-500">{t("Admin")}</Link>
+
+
         </div>
       </div>
     </header>

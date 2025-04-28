@@ -36,7 +36,7 @@ export default function Home() {
 
          <section className="flex min-h-[80vh] flex-col items-start justify-center px-4">
           <div className="">
-            <h1 className="text-6xl font-bold tracking-tighter md:text-8xl">
+            <h1 className="ml-12 text-6xl font-bold tracking-tighter md:text-8xl">
               PRODUCT
               <br />
               DESIGNER &

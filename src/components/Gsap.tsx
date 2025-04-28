@@ -3,7 +3,7 @@
 "use client";
 
 import { gsap } from "gsap";
-
+import LogoEZ from"../../public/LogoEZ990.svg";
 import Image from "next/image";
 import { useEffect } from "react";
 
@@ -22,7 +22,7 @@ const Gsap = () => {
   return (
     <div className="mt-4 size-60 sm:size-72 md:size-80 lg:h-[16vh] lg:w-[16vw] lg:-mt-[98vh]">
       <div>
-        <Image id="Logo" alt="logo" src="/LogoEZ990.svg" width="333" height="333" />
+        <Image id="Logo" alt="logo" src={LogoEZ} width="333" height="333" />
       </div>
     </div>
   );
