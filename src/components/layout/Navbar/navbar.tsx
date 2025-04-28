@@ -8,7 +8,7 @@ import { ChevronDown, Menu, X } from "lucide-react"
 import Image from "next/image"
 import { cn } from "../../../../lib/lib/utils"
 import { useTranslations } from "next-intl";
-import TextLogo from '/public/TextLogo4.png';
+//import TextLogo from '/public/TextLogo4.png';
 
 
 export function Navbar() {
@@ -58,7 +58,7 @@ const navigation = [
           <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only"></span>
             <div className="h-8 w-auto font-bold text-xl">
-              <Image src={TextLogo} alt="Logo" width={120} height={70} />
+              <Image src="/TextLogo4.png" alt="Logo" width={120} height={70} />
             </div>
           </Link>
         </div>
