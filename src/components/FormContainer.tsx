@@ -24,8 +24,7 @@ export type FormContainerProps = {
 const FormContainer = async ({ table, type, data, id }: FormContainerProps) => {
   let relatedData = {};
 
-  const { userId, sessionClaims } = await auth();
-  const role = (sessionClaims?.metadata as { role?: string })?.role;
+  const { userId, sessionClaims } = await await auth();  const role = (sessionClaims?.metadata as { role?: string })?.role;
   const currentUserId = userId;
 
   if (type !== "delete") {

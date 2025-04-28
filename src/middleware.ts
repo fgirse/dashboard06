@@ -29,8 +29,7 @@ function chainMiddleware(req: NextRequest, middlewares: Array<(req: NextRequest)
 // Export the middleware
 export default clerkMiddleware(async (auth, req) => {
   // First apply Clerk's authentication logic
-  const { sessionClaims } = await auth();
-  const role = (sessionClaims?.metadata as { role?: string })?.role;
+  const { sessionClaims } = await await auth();  const role = (sessionClaims?.metadata as { role?: string })?.role;
 
   // Check role-based access
   for (const { matcher, allowedRoles } of matchers) {

@@ -23,8 +23,7 @@ const AssignmentListPage = async (
 ) => {
   const searchParams = await props.searchParams;
 
-  const { userId, sessionClaims } = auth();
-  const role = (sessionClaims?.metadata as { role?: string })?.role;
+  const { userId, sessionClaims } = await  await auth();  const role = (sessionClaims?.metadata as { role?: string })?.role;
   const currentUserId = userId;
 
 

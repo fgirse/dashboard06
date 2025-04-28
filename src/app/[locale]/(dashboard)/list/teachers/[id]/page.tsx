@@ -21,8 +21,7 @@ const SingleTeacherPage = async (
     id
   } = params;
 
-  const { sessionClaims } = auth();
-  const role = (sessionClaims?.metadata as { role?: string })?.role;
+  const { sessionClaims } = await auth();  const role = (sessionClaims?.metadata as { role?: string })?.role;
 
   const teacher:
     | (Teacher & {

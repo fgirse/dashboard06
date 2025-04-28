@@ -18,8 +18,7 @@ const ParentListPage = async (
 ) => {
   const searchParams = await props.searchParams;
 
-  const { sessionClaims } = auth();
-  const role = (sessionClaims?.metadata as { role?: string })?.role;
+  const { sessionClaims } = await auth();  const role = (sessionClaims?.metadata as { role?: string })?.role;
 
 
   const columns = [
