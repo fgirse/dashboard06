@@ -8,7 +8,7 @@ import { ChevronDown, Menu, X } from "lucide-react"
 import Image from "next/image"
 import { cn } from "../../../../lib/lib/utils"
 import { useTranslations } from "next-intl";
-import TextLogo from '/Users/fgirse/dashboard-5/dashboard-sms-5/public/TextLogo4.png';
+import TextLogo from '/public/TextLogo4.png';
 
 
 export function Navbar() {
