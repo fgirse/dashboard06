@@ -13,11 +13,12 @@ import { auth } from "@clerk/nextjs/server";
 
 type StudentList = Student & { class: Class };
 
-const StudentListPage = async ({
-  searchParams,
-}: {
-  searchParams: { [key: string]: string | undefined };
-}) => {
+const StudentListPage = async (
+  props: {
+    searchParams: Promise<{ [key: string]: string | undefined }>;
+  }
+) => {
+  const searchParams = await props.searchParams;
   const { sessionClaims } = auth();
   const role = (sessionClaims?.metadata as { role?: string })?.role;
 
@@ -89,7 +90,7 @@ const StudentListPage = async ({
             // <button className="w-7 h-7 flex items-center justify-center rounded-full bg-lamaPurple">
             //   <Image src="/delete.png" alt="" width={16} height={16} />
             // </button>
-            <FormContainer table="student" type="delete" id={item.id} />
+            (<FormContainer table="student" type="delete" id={item.id} />)
           )}
         </div>
       </td>
@@ -140,7 +141,7 @@ const StudentListPage = async ({
   ]);
 
   return (
-    <div className="bg-white p-4 rounded-md flex-1 m-4 mt-0">
+    (<div className="bg-white p-4 rounded-md flex-1 m-4 mt-0">
       {/* TOP */}
       <div className="flex items-center justify-between">
         <h1 className="hidden md:block text-lg font-semibold">All Students</h1>
@@ -157,7 +158,7 @@ const StudentListPage = async ({
               // <button className="w-8 h-8 flex items-center justify-center rounded-full bg-lamaYellow">
               //   <Image src="/plus.png" alt="" width={14} height={14} />
               // </button>
-              <FormContainer table="student" type="create" />
+              (<FormContainer table="student" type="create" />)
             )}
           </div>
         </div>
@@ -166,7 +167,7 @@ const StudentListPage = async ({
       <Table columns={columns} renderRow={renderRow} data={data} />
       {/* PAGINATION */}
       <Pagination page={p} count={count} />
-    </div>
+    </div>)
   );
 };
 
