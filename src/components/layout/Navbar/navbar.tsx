@@ -8,7 +8,7 @@ import { ChevronDown, Menu, X } from "lucide-react"
 import Image from "next/image"
 import { cn } from "../../../../lib/lib/utils"
 import { useTranslations } from "next-intl";
-import TextLogo from '../../../../public/TextLogo4.png';
+import TextLogo from '/Users/fgirse/dashboard-5/dashboard-sms-5/public/TextLogo4.png';
 
 
 export function Navbar() {
@@ -40,7 +40,7 @@ const navigation = [
       href: "rechtliches",    
       children: [
         { title: t("impressum"), href: "/impressum", description: "Infos die laut Gesetzgeber zur Verfügung gstellt werden müssen" },
-        { title: t("datenschutz"), href: "Datenschutzerklaerung", description: "Alles zum Datenschutz " },
+        { title: t("datenschutz"), href: "datenschutz", description: "Alles zum Datenschutz " },
         { title: t("cookies"), href: "/cookies", description: "Sell products online" },
         { title: t("agb"), href: "agb#", description: "zur freien Verfügumg  " },
       ],
