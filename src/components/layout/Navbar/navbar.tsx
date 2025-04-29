@@ -36,18 +36,18 @@ const navigation = [
       ],
     },
     {
-      title: "Rechtliches",
+      title: t("rechtliches"),
       href: "rechtliches",    
       children: [
         { title: t("impressum"), href: "/impressum", description: "Infos die laut Gesetzgeber zur Verfügung gstellt werden müssen" },
         { title: t("datenschutz"), href: "datenschutz", description: "Alles zum Datenschutz " },
         { title: t("cookies"), href: "/cookies", description: "Sell products online" },
-        { title: t("agb"), href: "agb#", description: "zur freien Verfügumg  " },
+        { title: t("agb"), href: "/agb", description: "zur freien Verfügumg  " },
       ],
     },
-    { title: "Galery", href: "galleria" },
-    { title: "Service", href: "services" },
-    { title: "Kontakt", href: "contact" },
+    { title: "gallery", href: "galleria" },
+    { title: "service", href: "services" },
+    { title: "contact", href: "contact" },
 
   ]
 
@@ -58,7 +58,7 @@ const navigation = [
           <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only"></span>
             <div className="h-8 w-auto font-bold text-xl">
-              <Image src="/TextLogo4.png" alt="Logo" width={120} height={70} />
+              <Image src="/TextLogo4.png" alt="Logo" width={180} height={70} />
             </div>
           </Link>
         </div>

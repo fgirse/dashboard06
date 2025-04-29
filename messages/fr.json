@@ -62,8 +62,8 @@
   
     "Hero": {
   
-      "präTitle": "(8zense.com)",
-      "Title": "Transform votre espace de vie in a Masterpiece",
+      "präTitle": "8zense.com",
+      "Title": "transform votre espace de vie in a masterpiece",
       "postTitle": "Desing sans temps avec le materiale Beton"
   
     },  
@@ -117,16 +117,15 @@
       "cv": "Curriculum",
       "whatwedo": "Questque fait?",
       "whoweare": "Qui nous sommes?",
-      "Projects": "Projects",
-      "Services": "Accesoires",
+      
+      "services": "Accesoires",
       "contact": "Contacte",
       "impressum": "Imprimer",
       "datenschutz": "Protection des données",
       "rechtliches": "point du juristement",
       "cookies": "Cookies",
       "agb": "conditions generales",
-      "Admin": "Board Admin",
-      "topsecret": "Tablwau-Admin"
+      "Admin": "Board Admin"
     },
   
     "NotFoundPage": {

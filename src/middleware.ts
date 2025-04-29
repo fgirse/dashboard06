@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
 import createIntlMiddleware from 'next-intl/middleware';
-import { routing } from '@//i18n/routing';
+import { routing } from '@/i18n/routing';
 import { routeAccessMap } from "@/lib/settings";
 
 // Create the internationalization middleware
@@ -29,7 +29,7 @@ function chainMiddleware(req: NextRequest, middlewares: Array<(req: NextRequest)
 // Export the middleware
 export default clerkMiddleware(async (auth, req) => {
   // First apply Clerk's authentication logic
-  const { sessionClaims } = await await auth();  const role = (sessionClaims?.metadata as { role?: string })?.role;
+  const { sessionClaims } =  await auth();  const role = (sessionClaims?.metadata as { role?: string })?.role;
 
   // Check role-based access
   for (const { matcher, allowedRoles } of matchers) {

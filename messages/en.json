@@ -60,7 +60,7 @@
     "Hero": {
       "präTitle": "8zense.com",
   
-      "Title": "Transform your space in a Masterpiece",
+      "Title": "transform your space in a masterpiece",
   
       "postTitle": "Elevate your living experience with our bespoke interior design services tailored to your unique style and needs."
     },
@@ -86,13 +86,21 @@
   
       "text01": "Desing Interiore",
   
-      "text02":  "Professionell Accompagnment, Advice and Support \\n in planing and project-realizing your\\n individual Interieure-Desings-Project\\n in Appartement, Home, Office or medical Office. \\nContact us - you are welcome!!!!",
+      "text02":  "Professionell Accompagnment, Advice and Support \n in planing and project-realizing your\n individual Interieure-Desings-Project\n in Appartement, Home, Office or medical Office. \n Contact us - you are welcome!!!!",
   
       "text03": "Timeless Design",
   
       "text04": "is a synonym for timeless exclusive and individuelles Design. Every piece of our conqouer pieces are handmade and a unicat"
   
     },
+
+    "IntroWebside": {
+      "zitat01": "the beauty of a living being",
+      "zitat02": "is not created by the atoms",
+      "zitat03": "which it contains, but by the arrangement",
+      "zitat04": "of these to each other"
+},
+
   
     "LocaleLayout":{
         "title": "8zense.com",
@@ -123,7 +131,6 @@
       "cv": "Curriculum vitae",
       "whatwedo": "What we do?",
       "whoweare": "Who we are?",
-      "Projects": "Projects",
       "services": "Services",
       "contact": "Contact",
       "impressum": "Imprint",
@@ -131,8 +138,7 @@
       "rechtliches": "items of right",
       "cookies": "Cookies",
       "agb": "General Terms and Conditions",
-       "Admin": "Dashboard",
-       "topsecret": "Dashboard"
+       "Admin": "Dashboard"
     },
   
     "NotFoundPage": {
@@ -142,17 +148,13 @@
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
     "OurHistory": {},
 
-    "IntroWebside": {
-      "zitat01": "die Schönheit eines Lebewesens ",
-      "zitat02": "wird nicht durch die Atome erzeugt ",
-      "zitat03": "welche es beinhaltet sondern von der ",
-      "zitat04": "Anordnung dieser zueinander"
-},
+  
 
   
     "Rechtliches": {
       "Title_Rechtliches": "Rechtliches"
     },
+
     "PageLayout": {
       "links": {
         "docs": {
