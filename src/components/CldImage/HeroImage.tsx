@@ -4,7 +4,7 @@ import {Cloudinary} from "@cloudinary/url-gen";
 // Import required actions.
 
 import {byAngle} from "@cloudinary/url-gen/actions/rotate"
-import {sepia} from "@cloudinary/url-gen/actions/effect";
+
 
 
   // Import the required actions and qualifiers.
@@ -18,8 +18,7 @@ import {sepia} from "@cloudinary/url-gen/actions/effect";
   import { useTranslations } from "next-intl";
   import {TextStyle} from "@cloudinary/url-gen/qualifiers/textStyle";
   import {autoGravity, compass} from "@cloudinary/url-gen/qualifiers/gravity";
-  import Container from "../Container";
-  import Center from "../Center";
+  
 import { TextAlignment } from "@cloudinary/url-gen/qualifiers";
 // Create and configure your Cloudinary instance.
 

@@ -17,13 +17,8 @@ const Header = () => {
         <div className="w-16 mb-3">
       <Image src="/LogoEZ990.svg" alt="8zense Logo" width={54} height={54} className="bg-black ml-3 mt-3" />
       </div>
-      <div className=" bg-zinc-600 rounded-lg ">
-      <LocaleSwitcherSelect defaultValue={"de"} label={"locale"} >
-        <option value="🇬🇧 en">English</option>
-        <option value="🇩🇪 de">Deutsch</option>
-        <option value="🇫🇷 fr">Français</option>
-
-        </LocaleSwitcherSelect> 
+      <div className="w-36 h-36 bg-zinc-600 rounded-lg ">
+    <LocaleSwitcherSelect children={undefined} defaultValue={"en"} label={"locale"}/>
       </div>
       </div>
       <div className="mr-3"> 

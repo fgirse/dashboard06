@@ -1,5 +1,5 @@
 import {useLocale, useTranslations} from 'next-intl';
-import {routing} from '@//i18n/routing';
+import {routing} from '@/i18n/routing';
 import LocaleSwitcherSelect from './LocaleSwitcherSelect';
 
 export default function LocaleSwitcher() {
@@ -10,7 +10,7 @@ export default function LocaleSwitcher() {
     <LocaleSwitcherSelect defaultValue={locale} label={t('label')}>
       {routing.locales.map((cur) => (
         <option key={cur} value={cur}>
-          {t('message', {locale: cur})}
+          {t('locale', {locale: cur})}
         </option>
       ))}
     </LocaleSwitcherSelect>

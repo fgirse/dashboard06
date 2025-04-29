@@ -17,12 +17,12 @@ export default function Home() {
         
       <div className="  w-full max-w-[100vw] mx-auto flex flex-col mb-8 ">
          <HeroImage/>
-          <div className=" mt-[-0vh] flex flex-col items-center bg-gradient-to-b from-[#938d7d] lg:bg-gradient-to-b via-transparent  to-transparent lg:mt-[52vh]">                                                                                                          "&gt;
+          <div className=" mt-[vh] flex flex-col items-center bg-gradient-to-b from-[#938d7d] lg:bg-gradient-to-b via-transparent  to-transparent lg:mt-[50vh]">
          <Gsap/>
          </div>   
          </div>
         
-        <div className=" mt-[8vw] w-full max-w-[100vw] mx-auto flex flex-col lg:mt-0">
+        <div className=" mt-[8vw] w-full max-w-[100vw] mx-auto flex flex-col lg:mt-[-44vh]">
         <HeroImage02/> 
          </div>
 

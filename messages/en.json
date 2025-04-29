@@ -106,9 +106,9 @@
       "description": "landing page entwickelt mit Next.js und next-intl"
     },
   
-    "LocaleSwitcher": {
-      "label": "Change language",
-      "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} fr {🇫🇷 France} other {Unknown}}"
+   "LocaleSwitcher": {
+      "label": "Change Language",
+      "locale": "{locale, select, de {🇩🇪 German} en {🇺🇸 English} fr {🇫🇷 French} other {Unbekannt}}"
     },
   
     "Manifest": {
@@ -143,8 +143,11 @@
     "OurHistory": {},
 
     "IntroWebside": {
-    "zitat": "The beauty of a living being /n is not created by the atoms it contains, but by the arrangement of these in relation to each other"
-    },
+      "zitat01": "die Schönheit eines Lebewesens ",
+      "zitat02": "wird nicht durch die Atome erzeugt ",
+      "zitat03": "welche es beinhaltet sondern von der ",
+      "zitat04": "Anordnung dieser zueinander"
+},
 
   
     "Rechtliches": {

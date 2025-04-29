@@ -106,13 +106,12 @@
     },
   
     "LocaleSwitcher": {
-      "French": "Français",
-      "label": "Changer la lanque",
-      "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} fr {🇫🇷 France} other {Unknown}}"
+      "label": "Changer la Lanque",
+      "locale": "{locale, select, de {🇩🇪 Allmend} en {🇺🇸 Anglais} fr {🇫🇷 France} other {ne pas connue}}"
     },
   
     "Navbar": {
-      "Navbar.home": "Maison",
+      "home": "Maison",
       "gallery": "Exposition",
       "about": "apropos de nous",
       "cv": "Curriculum",

@@ -110,9 +110,10 @@
       "title": "8zense.com",
       "description": "landing page entwickelt mit Next.js und next-intl"
     },
+   
     "LocaleSwitcher": {
-      "label": "wähle Sprache",
-      "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} fr {🇫🇷 France} other {Unknown}}"
+      "label": "Sprache ändern",
+      "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} fr {🇫🇷 France} other {Unbekannt}}"
     },
     "Manifest": {
       "description": "",

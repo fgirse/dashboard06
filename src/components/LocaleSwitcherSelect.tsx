@@ -2,9 +2,9 @@
 
 import clsx from 'clsx';
 import {useParams} from 'next/navigation';
+import {Locale} from 'next-intl';
 import {ChangeEvent, ReactNode, useTransition} from 'react';
-import { useRouter,usePathname, } from '@/i18n/navigation';
-import { Locale } from 'next-intl';
+import {usePathname, useRouter} from '@/i18n/navigation';
 
 type Props = {
   children: ReactNode;
@@ -38,7 +38,7 @@ export default function LocaleSwitcherSelect({
   return (
     <label
       className={clsx(
-        'relative text-gray-200',
+        'relative text-gray-400',
         isPending && 'transition-opacity [&:disabled]:opacity-30'
       )}
     >
