@@ -9,7 +9,7 @@ import {
   TeacherSchema,
 } from "./formValidationSchemas";
 import prisma from "./prisma";
-import { clerkClient } from "@clerk/clerk-sdk-node";
+import { clerkClient } from "@clerk/express"
 
 type CurrentState = { success: boolean; error: boolean };
 
@@ -142,7 +142,7 @@ export const createTeacher = async (
   data: TeacherSchema
 ) => {
   try {
-    const user = await clerkClient.users.createUser({
+    const user =  clerkClient.users.createUser({
       username: data.username,
       password: data.password,
       firstName: data.name,
@@ -152,7 +152,7 @@ export const createTeacher = async (
 
     await prisma.teacher.create({
       data: {
-        id: user.id,
+        id: (await user).id,
         username: data.username,
         name: data.name,
         surname: data.surname,
@@ -367,7 +367,8 @@ export const createExam = async (
   currentState: CurrentState,
   data: ExamSchema
 ) => {
-  // const { userId, sessionClaims } = await auth();  // const role = (sessionClaims?.metadata as { role?: string })?.role;
+  // const { userId, sessionClaims } = auth();
+  // const role = (sessionClaims?.metadata as { role?: string })?.role;
 
   try {
     // if (role === "teacher") {
@@ -404,7 +405,8 @@ export const updateExam = async (
   currentState: CurrentState,
   data: ExamSchema
 ) => {
-  // const { userId, sessionClaims } = await auth();  // const role = (sessionClaims?.metadata as { role?: string })?.role;
+  // const { userId, sessionClaims } = auth();
+  // const role = (sessionClaims?.metadata as { role?: string })?.role;
 
   try {
     // if (role === "teacher") {
@@ -446,7 +448,8 @@ export const deleteExam = async (
 ) => {
   const id = data.get("id") as string;
 
-  // const { userId, sessionClaims } = await auth();  // const role = (sessionClaims?.metadata as { role?: string })?.role;
+  // const { userId, sessionClaims } = auth();
+  // const role = (sessionClaims?.metadata as { role?: string })?.role;
 
   try {
     await prisma.exam.delete({

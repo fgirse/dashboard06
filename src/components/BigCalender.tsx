@@ -1,40 +1,29 @@
 "use client";
 
-import { dateFnsLocalizer } from "react-big-calendar";
-import { format, parse, startOfWeek, getDay } from "date-fns";
-import { enUS } from "date-fns/locale/en-US";
-import { View } from "react-big-calendar";
+import { Calendar, momentLocalizer, View, Views, CalendarProps } from "react-big-calendar";
+import moment from "moment";
 import "react-big-calendar/lib/css/react-big-calendar.css";
-import React, { useState } from "react";
-import { Calendar as BigCalendarComponent, Views, CalendarProps } from "react-big-calendar";
+import { useState } from "react";
 
-const locales = {
-  "en-US": enUS,
+const localizer = momentLocalizer(moment);
+
+const MyCalendar: React.FC<CalendarProps<any, any>> = (props) => {
+  return <MyCalendar {...props} />;
 };
 
-const localizer = dateFnsLocalizer({
-  format,
-  parse,
-  startOfWeek,
-  getDay,
-  locales,
-});
-
-const MyCalendar = <TEvent extends object = Event, TResource extends object = object>({
+const BigCalendar = ({
   data,
 }: {
-  data: CalendarProps<TEvent, TResource>["events"];
+  data: { title: string; start: Date; end: Date }[];
 }) => {
-  const [view, setView] = useState<keyof typeof Views>("WORK_WEEK");
+  const [view, setView] = useState<View>(Views.WORK_WEEK);
 
-  const handleOnChangeView = (selectedView: keyof typeof Views) => {
+  const handleOnChangeView = (selectedView: View) => {
     setView(selectedView);
   };
 
-  const BigCalendar = BigCalendarComponent as any;
-
   return (
-    <BigCalendar
+    <MyCalendar
       localizer={localizer}
       events={data}
       startAccessor="start"
@@ -49,4 +38,4 @@ const MyCalendar = <TEvent extends object = Event, TResource extends object = ob
   );
 };
 
-export default MyCalendar;
+export default BigCalendar;

@@ -8,6 +8,7 @@ import Gsap from "@/components/Gsap"
 import CollapseCardFeatures from "@/components/CollapsCardFeatures"
 import ProjectCard from "@/components/project-card";
 import { Button } from "@heroui/react";
+import  Caroussel  from "@/components/HorizontalCaroussel";
 
 
 export default function Home() {
@@ -45,7 +46,11 @@ export default function Home() {
             </h1>
           </div>
         </section>
-
+        <section className="flex min-h-[80vh] flex-col items-start justify-center px-4">
+          <div className="flex flex-col items-center">
+            <Caroussel/>
+          </div>
+        </section>
         
     
       </main>
